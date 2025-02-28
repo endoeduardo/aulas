@@ -10,9 +10,9 @@ services:
     volumes:
       - ollama:/root/.ollama
     # Enable if using AMD gpu.
-    # devices:
-    #   - "/dev/kfd:/dev/kfd"
-    #   - "/dev/dri:/dev/dri"
+    devices:
+      - "/dev/kfd:/dev/kfd"
+      - "/dev/dri:/dev/dri"
 
 volumes:
   ollama:
