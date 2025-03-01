@@ -1,0 +1,22 @@
+[
+    {
+        "provider_id": 1234,
+        "locations": [{
+            "address1": "544-536 Central Ave",
+            "region": "Carlstadt, NJ 07072"
+        }],
+        "provider_name": "Carlos Santiago",
+        "specialty": "Pediatrics"
+    },
+    {
+        "provider_id": 1222,
+        "locations": [{
+            "address1": "200 W 79th St",
+            "city": "New York",
+            "state": "NY",
+            "zip": 10024
+        }],
+        "provider_name": "Dom P. Braganca",
+        "specialty": "Bariatrics"
+    }
+]

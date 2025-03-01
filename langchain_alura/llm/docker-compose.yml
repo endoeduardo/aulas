@@ -1,18 +1,24 @@
-version: "3.8"
-
 services:
+
   ollama:
-    image: ollama/ollama
+    image: ollama/ollama:0.5.13-rc2-rocm
     container_name: ollama
-    restart: unless-stopped
+    environment:
+      OLLAMA_MODELS: /usr/share/ollama
+      HSA_OVERRIDE_GFX_VERSION: "10.3.0"
+      HIP_VISIBLE_DEVICES: "0"
+    devices:
+      - "/dev/kfd"
+      - "/dev/dri"
+    security_opt:
+      - seccomp:unconfined
+    cap_add:
+      - SYS_PTRACE
+    ipc: host
+    group_add:
+      - video
+    volumes:
+      - /home/username/.ollama:/root/.ollama
+      - /home/username/ollama/models:/usr/share/ollama
     ports:
       - "11434:11434"
-    volumes:
-      - ollama:/root/.ollama
-    # Enable if using AMD gpu.
-    devices:
-      - "/dev/kfd:/dev/kfd"
-      - "/dev/dri:/dev/dri"
-
-volumes:
-  ollama:
