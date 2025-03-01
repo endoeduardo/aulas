@@ -1,5 +1,16 @@
 {
-    "title": "Whisker Watch",
-    "description": "Discover and track your favorite cat-related content, from funny memes to adorable pictures of cats.",
-    "features": "Track your favorite cat breeds, discover new breeds, read fun facts about different types of cats, browse through cute cat pictures and videos, get notified for new updates from your favorite cat influencers."
+    "properties": {
+        "title": [
+            "Whisker Watch"
+        ],
+        "description": [
+            "Get alerts for cat pictures, videos, and memes. Follow your favorite feline influencers!"
+        ],
+        "features": [
+            "Cat news feed",
+            "Cat picture sharing",
+            "Meme generator",
+            "Influencer tracking"
+        ]
+    }
 }

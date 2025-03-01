@@ -50,4 +50,8 @@ final_chain = (
     chain4
 )
 
-print(final_chain.invoke({"theme": "Brazil, Curitiba"}))
+result = final_chain.invoke({"theme": "I want to see the snow"})
+with open("aula2/output/intinerary.md", "w", encoding="utf-8") as file:
+    file.write(result)
+
+print(result)
