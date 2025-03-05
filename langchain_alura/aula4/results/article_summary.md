@@ -1,0 +1,1 @@
+As conclusões do artigo são que o método de extração de DNA direto a partir de swabs é mais eficaz em identificar portaadores assintomáticos do N. meningitidis do que o método de cultura convencional.

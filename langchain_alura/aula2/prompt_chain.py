@@ -50,7 +50,7 @@ final_chain = (
     chain4
 )
 
-result = final_chain.invoke({"theme": "I want to see the snow"})
+result = final_chain.invoke({"theme": "Hot weather"})
 with open("aula2/output/intinerary.md", "w", encoding="utf-8") as file:
     file.write(result)
 
